@@ -10,6 +10,7 @@ public class JFrameTest {
 
         frame.add(new TrafficLights());
         frame.setPreferredSize(new Dimension(800, 800));
+        frame.setLocation(1115, 150);
 
         frame.pack();
         frame.setVisible(true);
