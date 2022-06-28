@@ -49,6 +49,10 @@ public class TrafficLights extends Canvas {
         g.setColor(new Color(0,192,53));
         g.fillArc(350,450,100,100,0,360);
 
+        //Треугольники
+        g.setColor(new Color(50,50,50));
+        g.fillPolygon(new int[]{170,260,260}, new int[]{250-80, 250, 250-80}, 3);
+
 
 
     }
