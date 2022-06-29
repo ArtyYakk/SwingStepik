@@ -15,10 +15,10 @@ public class TrafficLights extends Canvas {
         //g.fillRect(325,120,150,460);
         g.fillRect(321,132,158,438);//Заполнение ширины
         g.fillRect(330,117,140,468);//Заполнение высоты
-        g.fillArc(320,115, 34, 34,90,90);//upleft
-        g.fillArc(320,553, 34, 34,180,90);//downleft
-        g.fillArc(446,115, 34, 34,0,90);//upright
-        g.fillArc(446,553, 34, 34,270,90);//downright
+        g.fillArc(320,115, 34, 34,90,360);//upleft
+        g.fillArc(320,553, 34, 34,180,360);//downleft
+        g.fillArc(446,115, 34, 34,0,360);//upright
+        g.fillArc(446,553, 34, 34,270,360);//downright
 
         //Ножка
         //g.fillRect(372,607, 60, 80);
@@ -51,7 +51,32 @@ public class TrafficLights extends Canvas {
 
         //Треугольники
         g.setColor(new Color(50,50,50));
-        g.fillPolygon(new int[]{170,260,260}, new int[]{250-80, 250, 250-80}, 3);
+        g.fillPolygon(new int[]{215,390,3,4,5,6}, new int[]{165,230,3,4,5,6}, 6);
+        g.fillArc(210,150,20,20,0,360);
+        g.fillArc(286,211,20,20,0,360);
+        g.fillArc(286,150,20,20,0,360);
+
+
+
+
+
+
+
+
+        for(int i=0; i<=800; i+=5){
+            g.drawLine(0,i,800,i);
+        }
+        for(int i=0; i<=800; i+=5){
+            g.drawLine(i,0,i,800);
+        }
+
+        g.setColor(Color.BLUE);
+        for(int i=0; i<=800; i+=50){
+            g.drawLine(0,i,800,i);
+        }
+        for(int i=0; i<=800; i+=50){
+            g.drawLine(i,0,i,800);
+        }
 
 
 
